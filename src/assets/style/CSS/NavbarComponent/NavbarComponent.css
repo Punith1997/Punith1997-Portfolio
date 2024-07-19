@@ -1,0 +1,212 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Root variables */
+:root {
+  --navbar-height: 8vh;
+  --navbar-color: #1b2335;
+  --navbar-hamburger-color: #83739b;
+  --navbar-hamburger-background-color: #252f45;
+  --navbar-resume-color: #a899c5;
+  --navbar-items-height: 5vh
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  height: var(--navbar-height);
+  background-color: var(--navbar-color);
+  width: 100%;
+  z-index: 4;
+}
+
+.navbar-div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar-div-left, .navbar-div-right {
+  display: flex;
+  align-items: center;
+  height: var(--navbar-items-height);
+  padding-left: 30px;
+  padding-right: 30px;
+  /* padding: 0.9em; */
+  /* gap: 0.8em; */
+  gap: 15px;
+}
+
+.navbar-div-left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.navbar-div-right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navbar-hamburger, .navbar-theme-changer {
+  color: var(--navbar-hamburger-color);
+  background-color: var(--navbar-hamburger-background-color);
+  border-radius: 10px;
+  height: 100%;
+  cursor: pointer;
+  inline-size: 2vh;
+  padding-inline: 0.8em;
+}
+
+.navbar-hamburger{
+  /* width: 2em; */
+}
+
+.navbar-theme-changer{
+  /* width: 1.5em; */
+}
+
+.navbar-heading {
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 104.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size:  3vh;
+  /* padding-inline: 0.8em; */
+  /* height: 100%; */
+  /* font-size: 100%; */
+  /* flex-shrink: 0; */
+}
+
+.navbar-resume {
+  color: var(--navbar-resume-color);
+  background-color: var(--navbar-hamburger-background-color);
+  border-radius: 10px;
+  /* font-size: 100%; */
+  font-size:  2vh;
+  cursor: pointer;
+  /* padding: 0.6em; */
+  text-decoration: none;
+  padding-inline: 0.8em;
+  height: 100%;
+  /* inline-size: 2vh; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  position: absolute;
+  top: var(--navbar-height);
+  left: 0;
+  width: 300px;
+  background-color: var(--navbar-color);
+  /* padding: 1em; */
+  animation: slide-down 0.3s ease-in-out;
+  z-index: 3;
+  /* padding-left: 2%; */
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  /* height: auto; */
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hamburger-menu-options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: var(--navbar-resume-color);
+  padding-left: 18%;
+  /* margin-bottom: 1em; */
+}
+
+.hamburger-menu-options li {
+  /* margin: 0.5em 0; */
+}
+
+.social-icons {
+  display: flex;
+  /* justify-content: space-around; */
+  /* margin: 1em 0; */
+  gap: 22px;
+  padding-left: 18%;
+
+}
+
+.social-icons i {
+  font-size: 1.5em;
+  color: var(--navbar-resume-color);
+  cursor: pointer;
+  margin-top: 0.9em;
+}
+
+.hamburger-menu-single-option-list{
+  display: flex;
+  /* border: 1px solid green; */
+  align-items: center;
+  gap: 15px;
+  color: #b9b1c9;
+  margin-top: 0.9em;
+  font-weight:500;
+  cursor: pointer;
+}
+
+.hamburger-menu-single-option-list-inview{
+  display: flex;
+  /* border: 1px solid green; */
+  align-items: center;
+  gap: 15px;
+  color: white;
+  margin-top: 0.9em;
+  font-weight:500;
+  cursor: pointer;
+
+}
+
+.hamburger-menu-single-option-initial-line{
+  border: 2px solid #6e6ea2;
+  display: block;
+  width: 15%;
+  height: 0px;
+  transition: width 0.3s ease;
+}
+
+.hamburger-menu-single-option-inview-line{
+  /* border: 1px solid; */
+  border-color: transparent;
+  background: linear-gradient(90deg, #12ff7d, #5161f3);
+  display: block;
+  width: 20%;
+  height: 4px;
+  transition: width 0.3s ease;
+}
+
+
+.footer-text {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #b9b1c9;
+  /* margin-top: 1em; */
+  /* border: 2px solid green; */
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-top:15px;
+  padding: 10px;
+  background-color: #242c4a;
+}

@@ -1,0 +1,394 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+
+:root {
+  --body-color: #0f1533;
+  --hover-color: #2a4292;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-color);
+  /* position: relative; */
+  /* overflow-y:hidden; */
+  overflow-y: scroll;
+  font-family: "Poppins", sans-serif;
+  /* font-family: Arial, sans-serif; */
+}
+
+.hover-effect {
+  position: fixed;
+  width: 500px; /* Increased size */
+  height: 500px; /* Increased size */
+  /* background: radial-gradient(circle, var(--hover-color) 0%, #0f1533 100%); */
+  /* background: radial-gradient(circle,rgba(42, 55, 235, 0.5) 0%,rgba(126, 21, 65, 0) 70%); */
+  background: radial-gradient(
+    circle,
+    rgba(42, 55, 235, 0.3) 0%,
+    rgba(126, 21, 65, 0) 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  /* background: var(--body-color); */
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #344f99;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #1d3c91;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+@media screen and (max-width: 1350px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .navbar {
+    height: 6vh;
+  }
+
+  .home-page-div {
+    flex-direction: column;
+    height: auto;
+    padding-top: 6vh;
+    min-height: 94vh;
+  }
+
+  .services-page-div {
+    min-height: 94vh;
+    padding-top: 6vh;
+  }
+
+  .skills-experience-page-div {
+    min-height: 94vh;
+    padding-top: 6vh;
+  }
+
+  .about-page-div {
+    min-height: 94vh;
+    padding-top: 6vh;
+  }
+
+  .skills-experience-page-div{
+    min-height: 94vh;
+  padding-top: 6vh;
+}
+
+.certificate-page-div{
+  min-height: 94vh;
+  padding-top: 6vh;
+}
+
+.contact-page-div{
+  min-height: 94vh;
+  padding-top: 6vh;
+}
+
+  .about-page-details-div {
+    flex-direction: column;
+    height: auto;
+    width: 98%;
+  }
+
+  .skills-page-cards-div {
+    gap: 3em;
+  }
+
+  .skills-page-single-card-div {
+    flex: 0 1 100%;
+  }
+
+  .about-page-info-div,
+  .about-page-photo-div {
+    flex: none;
+  }
+
+  .about-page-info-div {
+    font-size: 1em;
+  }
+
+  .about-page-photo-div > img {
+    width: 40%;
+    height: 55vh;
+  }
+
+  .services-page-single-card-div {
+    width: 40%;
+  }
+
+  .home-page-about {
+    flex: 1;
+  }
+
+  .home-page-photo {
+    margin-top: 15vh;
+  }
+
+  .home-page-photo-div-1 {
+    width: 30%;
+    height: 35vh;
+  }
+
+  .navbar-heading {
+    font-size: 1.55vh;
+  }
+
+  .navbar-hamburger,
+  .navbar-theme-changer {
+    inline-size: 1.8vh;
+    padding-inline: 0.5em;
+    height: 70%;
+  }
+
+  .home-page-about-info-text-1 {
+    font-size: 2em;
+  }
+
+  .home-page-about-info-text-2 {
+    font-size: 3em;
+  }
+
+  .services-page-heading-span {
+    font-size: 3em;
+  }
+
+  .about-page-heading-span {
+    font-size: 3em;
+  }
+
+  .skills-page-heading-span {
+    font-size: 3em;
+  }
+
+  .experience-page-heading-span{
+    font-size: 3em;
+  }
+
+  .certificate-page-heading-span{
+    font-size: 3em;
+  }
+  .contact-page-heading-span{
+    font-size: 3em;
+  }
+
+  .certificate-page-certificate-img{
+    width: 600px;
+    height:350px;
+  }
+
+  .home-page-about-info-paragraph-1 {
+    font-size: 1.4em;
+  }
+
+  .services-page-paragraph {
+    font-size: 1.4em;
+  }
+
+  .experience-page-info-div{
+    font-size: 1.4em;
+  }
+
+  .experience-page-single-card-role-heading-div{
+    font-size: 1.4em;
+  }
+
+  .experience-page-single-card-year-div{
+    font-size: 0.9em;
+  }
+
+  .experience-page-single-card-role-heading-company-div{
+    font-size: 0.9em;
+  }
+
+  
+
+  .experience-page-single-card-experience-section-single-detail-div h3{
+    font-size: 1.3em;
+  }
+
+  .experience-page-single-card-experience-section-single-skill-div{
+    font-size: 0.9em;
+  }
+
+  .navbar-resume {
+    height: 80%;
+    font-size: 1.5vh;
+    padding-inline: 0.5em;
+  }
+
+  .home-page-about-info-open-resume {
+    width: 100px;
+    font-size: small;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-heading {
+    font-size: 1.3vh;
+  }
+
+  .navbar-div-left,
+  .navbar-div-right {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .home-page-div {
+    margin-left: 10%;
+  }
+
+  .home-page-about-info-text-1 {
+    font-size: 1.8em;
+  }
+
+  .home-page-about-info-text-2 {
+    font-size: 2em;
+  }
+
+  .services-page-heading-span {
+    font-size: 1.5em;
+  }
+
+  .about-page-heading-span {
+    font-size: 1.5em;
+  }
+
+  .skills-page-heading-span {
+    font-size: 1.5em;
+  }
+
+  .experience-page-heading-span{
+    font-size: 1.5em;
+  }
+
+  .skills-page-cards-div {
+    font-size: 0.5em;
+  }
+
+  .services-page-single-card-div {
+    width: 100%;
+  }
+
+  .home-page-about-info-paragraph-1 {
+    font-size: 1em;
+  }
+
+  .services-page-paragraph {
+    font-size: 1em;
+  }
+
+  .experience-page-info-div{
+    font-size: 1em;
+  }
+
+  .about-page-info-div {
+    font-size: 0.8em;
+  }
+
+  .experience-page-single-card-div{
+    width: 100%;
+  }
+
+  .experience-page-single-card-role-heading-div{
+    font-size: 0.9em;
+  }
+
+  .experience-page-single-card-role-heading-company-div{
+    font-size: 0.6em;
+  }
+
+  .experience-page-single-card-role-div{
+    width: 60%;
+  }
+
+  .experience-page-single-card-year-div{
+    font-size: 0.5em;
+  }
+
+  .experience-page-single-card-experience-section-single-detail-div h3{
+    font-size: 0.8em;
+  }
+
+  .experience-page-single-card-experience-section-single-skill-div{
+    font-size: 0.7em;
+    padding: 2px;
+  }
+
+  .experience-page-single-card-experience-section-single-skill-outer-div{
+    padding: 0.1px;
+  }
+
+  .experience-page-single-card-experience-section-details-div ul {
+    font-size: 0.7em;
+}
+
+.experience-page-single-card-experience-section-details-div{
+  padding: 0px;
+}
+
+.certificate-page-heading-span{
+  font-size: 1.5em;
+}
+
+.contact-page-content-div{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.contact-page-info-paragraph{
+  width: 100%;
+}
+
+.contact-page-heading-span{
+  font-size: 1.5em;
+}
+
+.certificate-page-certificates-div{
+  align-items: center;
+  padding: 0px;
+}
+
+.certificate-page-certificate-img{
+  width:250px;
+  height:300px;
+}
+
+.certificate-page-certificate-img-detail{
+  font-size:0.7em;
+}
+
+
+  .about-page-photo-div > img {
+    width: 70%;
+    height: 35vh;
+  }
+
+  .home-page-photo {
+    margin-top: 7vh;
+    /* margin-top: 0px; */
+  }
+
+  .home-page-photo-div-1 {
+    height: 25vh;
+    width: 50%;
+  }
+}

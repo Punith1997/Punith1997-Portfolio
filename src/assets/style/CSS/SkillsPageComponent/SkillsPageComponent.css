@@ -1,0 +1,296 @@
+.skills-experience-page-div{
+    min-height: 92vh;
+  padding-top: 8vh;
+  /* border: 2px solid rgb(37, 29, 110); */
+  margin-left: 10%;
+}
+
+
+.skills-page-div{
+    /* border: 2px solid rgb(74, 158, 173); */
+}
+
+
+.skills-page-heading-span{
+    font-size: 4em;
+  /* margin-top: 0.1em; */
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  cursor: pointer;
+  word-wrap: unset;
+  font-weight: 600;
+}
+
+.experience-page-div{
+    width: 90%;
+    /* border: 5px solid rgb(91, 190, 236); */
+}
+
+.experience-page-heading-outer-div{
+    /* margin-top: 0.5em; */
+}
+
+.experience-page-heading-span{
+    display: inline;
+    font-size: 4em;
+    background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    word-wrap: unset;
+    font-weight: 600;
+    /* border: 2px solid greenyellow; */
+}
+
+.skills-page-cards-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 8em;
+    width: 90%;
+    text-align: center;
+    /* border: 2px solid rgb(37, 29, 110); */
+}
+
+.skills-page-single-card-div{
+    /* border: 2px solid rgb(49, 184, 94); */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.skills-page-single-card-heading-outer-div{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #202654;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.skills-page-single-card-heading-div{
+    /* background: #1a2049; */
+    background: linear-gradient(261deg, #1f2739 5.73%, rgba(23, 38, 71, .98) 93.52%);
+    width: 100%;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    color: #468fc6;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.skills-page-single-card-heading-div:hover,  .skills-page-single-card-single-skill-div:hover{
+    /* background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%); */
+    background: linear-gradient(277deg,#2454fe 1.72%,#34cf8e 98.88%);
+    color: white;
+}
+
+
+.skills-page-single-card-skills-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 95%;
+    /* border: 2px solid rgb(37, 29, 110); */
+}
+
+.skills-page-single-card-single-skill-outer-div{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #202654;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.skills-page-single-card-single-skill-div{
+    /* background: #1a2049; */
+    background: linear-gradient(261deg, #1f2739 5.73%, rgba(23, 38, 71, .98) 93.52%);
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    color: #468fc6;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.experience-page-info-div{
+    font-weight: 400;
+    font-size: 1.3em;
+    color: var(--navbar-resume-color);
+    width: 100%;
+}
+
+.experience-page-cards-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 8em;
+    /* text-align: center; */
+    /* border: 2px solid rgb(74, 223, 94); */
+    /* background: linear-gradient(261deg, #1f2739 5.73%, rgba(23, 38, 71, .98) 93.52%); */
+}
+
+.experience-page-single-card-div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1em; */
+    /* border: 2px solid rgb(29, 110, 40); */
+    /* padding: 10px; */
+    border-radius: 10px;
+    background: #1b2236
+}
+
+
+.experience-page-single-card-header-div{
+    width: 100%;
+    /* border: 2px solid rgb(29, 110, 40); */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #1b2236;
+    height: 100%;
+    padding-top: 10px;
+    background: rgb(35, 43, 63)
+}
+
+.experience-page-single-card-role-heading-company-div{
+    font-size: 1.1em;
+}
+
+.experience-page-single-card-year-div{
+    font-size: 1.2em;
+    /* padding: 20px; */
+    /* background: #252f45; */
+    color: #c2b6c7;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    /* padding-inline: 10px; */
+    /* border-radius:inherit; */
+    /* border-top-left-radius:inherit; */
+    /* border-bottom-left-radius:inherit; */
+    /* border: 2px solid green; */
+}
+
+.experience-page-single-card-role-heading-div{
+    font-size: 1.5em;
+  /* margin-top: 0.1em; */
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  cursor: pointer;
+  word-wrap: unset;
+  font-weight: 600;
+}
+
+.experience-page-single-card-role-div{
+    display: flex;
+    justify-content:space-between;
+    width: 80%;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    padding-left: 20px;
+    /* padding-top: 20px; */
+}
+
+.experience-page-single-card-role-details-div{
+    /* display: inline-flex;
+    flex-direction: column; */
+    /* align-items: flex-start; */
+    /* border: 2px solid rgb(179, 116, 45); */
+    color: #b09cae;
+}
+
+.experience-page-single-card-role-down-arrow-svg{
+    cursor: pointer;
+    color: #7a6d94;
+    width: 30px;
+    height: 30px;
+    stroke: currentColor; /* Apply stroke color */
+    stroke-width: 1; /* Adjust stroke width */
+}
+
+.experience-page-single-card-experience-section-div{
+    /* border: 2px solid green; */
+    width: 90%;
+    padding-top: 15px;
+}
+
+.experience-page-single-card-experience-section-details-div{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experience-page-single-card-experience-section-details-div h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #2ac4a9;
+}
+
+
+.experience-page-single-card-experience-section-details-div ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.experience-page-single-card-experience-section-details-div ul li {
+    margin-bottom: 10px;
+    color: #b09cae;
+}
+
+.experience-page-single-card-experience-section-single-detail-div{
+    /* padding-top: 20px; */
+}
+
+.experience-page-single-card-experience-section-single-detail-seperator-line-div{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(261deg, #3a4869 5.73%, rgba(31, 71, 69, 0.98) 93.52%);;
+}
+
+.experience-page-single-card-experience-section-skills-div{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-page-single-card-experience-section-single-skill-outer-div{
+    /* border: 2px solid #468fc6; */
+    border: 3px solid #1c80b9;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.experience-page-single-card-experience-section-single-skill-div{
+    /* border: 2px solid yellow; */
+    padding: 5px;
+    color: #5eabe6;
+    /* background: linear-gradient(261deg, #3a4869 5.73%, rgba(23, 38, 71, .98) 93.52%); */
+    background: linear-gradient(261deg, #3a4869 5.73%, rgba(31, 71, 69, 0.98) 93.52%);
+    border-radius: 5px;
+    font-weight: 600;
+}

@@ -1,0 +1,81 @@
+.services-page-div{
+    min-height: 92vh;
+  /* display: flex;
+  flex-direction: column; */
+  padding-top: 8vh;
+  /* border: 2px solid rgb(37, 29, 110); */
+  margin-left: 10%;
+}
+
+.services-page-heading-span{
+    font-size: 4em;
+  /* margin-top: 0.1em; */
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  word-wrap: unset;
+  /* margin-left: 20%; */
+  /* border: 2px solid yellow; */
+  font-weight: 600;
+}
+
+.services-page-paragraph{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: var(--navbar-resume-color);
+  width: 80%;
+}
+
+.services-page-cards-div{
+    display: flex;
+    justify-content:space-evenly;
+    width: 90%;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    gap: 15px;
+    /* margin-top: 1em; */
+}
+
+.services-page-single-card-div{
+  /* height: 25vh; */
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 2px solid green; */
+  background: #171b4b;
+  padding-top: 1vh;
+}
+
+.services-page-single-card-div i{
+  font-size: 4vh;
+  color: #1d7686;
+}
+
+.services-page-single-card-div:hover{
+  border: 5px solid #283969
+}
+
+.services-page-single-card-div-span{
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 104.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size:  2.5vh;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+.services-page-single-card-div p{
+  font-family: "Poppins", sans-serif;
+  color: var(--navbar-resume-color);
+  text-align: center;
+}
