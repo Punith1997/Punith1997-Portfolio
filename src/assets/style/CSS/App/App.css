@@ -243,7 +243,7 @@ body::-webkit-scrollbar-button {
 
 @media screen and (max-width: 800px) {
   .navbar-heading {
-    font-size: 1.3vh;
+    font-size: 1.8vh;
   }
 
   .navbar-div-left,
