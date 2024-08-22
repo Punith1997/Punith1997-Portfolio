@@ -12,21 +12,53 @@ const ContactPageComponent = () => {
           discuss how I can be a valuable asset. I'm actively seeking a new
           opportunity to apply my skills and continue growing!
         </p>
-        <div className="contact-page-hello-button-div">
+        <div
+          className="contact-page-hello-button-div"
+          onClick={() => (window.location.href = "mailto:punith1097@gmail.com")}
+        >
           <span className="contact-page-hello-button-span">Say Hello</span>
         </div>
 
         <div className="contact-page-social-icons">
-          <i className="fab fa-facebook"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-linkedin"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-github"></i>
+          {/* <i className="fab fa-facebook"></i> */}
+          {/* <i className="fab fa-twitter"></i> */}
+          <i
+            className="fab fa-linkedin"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/punith-aj-aa3801190/",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          ></i>
+          {/* <i className="fab fa-instagram"></i> */}
+          <i
+            className="fab fa-github"
+            onClick={() =>
+              window.open(
+                "https://github.com/Punith1997",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          ></i>
         </div>
 
         <p>
-          Designed and Coded by <span onClick={() => window.open("https://www.linkedin.com/in/punith-aj-aa3801190/", "_blank")}>Punith AJ</span> . Built with React and Nextjs,
-          Module CSS and Framer Motion, Deployed with Vercel.
+          Designed and Coded by{" "}
+          <span
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/punith-aj-aa3801190/",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            Punith AJ
+          </span>{" "}
+          . Built with React, Module CSS, and Deployed with GitHub Pages.
         </p>
       </div>
     </div>

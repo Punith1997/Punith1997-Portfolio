@@ -142,10 +142,10 @@
 
 .social-icons {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
   /* margin: 1em 0; */
   gap: 22px;
-  padding-left: 18%;
+  /* padding-left: 18%; */
 
 }
 

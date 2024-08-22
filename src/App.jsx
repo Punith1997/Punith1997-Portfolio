@@ -205,7 +205,6 @@
 
 // export default App;
 
-
 import React, { useState, useEffect, useRef } from "react";
 
 import NavbarComponent from "./Components/NavbarComponent/NavbarComponent";
@@ -233,6 +232,8 @@ const App = () => {
   const certificateSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
 
+  const [outsideClickedevent, setOutsideClickedEvent] = useState(null);
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       setHoverPosition({ x: e.x, y: e.y });
@@ -240,8 +241,15 @@ const App = () => {
 
     document.body.addEventListener("mousemove", handleMouseMove);
 
+    const handleClickOutside = (event) => {
+      setOutsideClickedEvent(event);
+    };
+
+    window.addEventListener("click", handleClickOutside);
+
     return () => {
       document.body.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -269,7 +277,8 @@ const App = () => {
       }
 
       if (certificateSectionRef.current) {
-        const certificateRect = certificateSectionRef.current.getBoundingClientRect();
+        const certificateRect =
+          certificateSectionRef.current.getBoundingClientRect();
         certificateInView = certificateRect.top < window.innerHeight / 1.8;
       }
 
@@ -327,7 +336,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1800); 
+    }, 1800);
 
     return () => clearTimeout(timer);
   }, []);
@@ -349,6 +358,7 @@ const App = () => {
         isCertificateInView={isCertificateInView}
         contactSectionRef={contactSectionRef}
         isContactInView={isContactInView}
+        outsideClickedevent={outsideClickedevent}
       />
 
       <HomePageComponent />
@@ -381,5 +391,3 @@ const App = () => {
 };
 
 export default App;
-
-

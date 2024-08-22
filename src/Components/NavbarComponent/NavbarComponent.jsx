@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../../assets/style/CSS/NavbarComponent/NavbarComponent.css";
 import resume from "../../assets/files/resume/Punith_AJ_Resume.pdf";
 
@@ -13,8 +13,12 @@ const NavbarComponent = ({
   isCertificateInView,
   contactSectionRef,
   isContactInView,
+  outsideClickedevent,
 }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+
+  const hamburgericonref = useRef(null);
+  const hamburgermenuref = useRef(null);
 
   const handleHamburgerClick = () => {
     setIsHamburgerOpen(!isHamburgerOpen);
@@ -40,6 +44,18 @@ const NavbarComponent = ({
     contactSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    if (
+      outsideClickedevent?.target &&
+      hamburgericonref?.current &&
+      hamburgermenuref?.current &&
+      !hamburgericonref?.current?.contains(outsideClickedevent?.target) &&
+      !hamburgermenuref?.current?.contains(outsideClickedevent?.target)
+    ) {
+      handleHamburgerClick();
+    }
+  }, [outsideClickedevent]);
+
   return (
     <>
       <nav className="navbar">
@@ -53,6 +69,7 @@ const NavbarComponent = ({
                 onClick={handleHamburgerClick}
                 // height="1em"
                 // width="1em"
+                ref={hamburgericonref}
               >
                 <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
               </svg>
@@ -64,6 +81,7 @@ const NavbarComponent = ({
                 onClick={handleHamburgerClick}
                 //   height="1em"
                 //   width="1em"
+                ref={hamburgericonref}
               >
                 <path
                   fill="currentColor"
@@ -94,7 +112,7 @@ const NavbarComponent = ({
           </div>
         </div>
         {isHamburgerOpen && (
-          <div className="hamburger-menu">
+          <div className="hamburger-menu" ref={hamburgermenuref}>
             <ul className="hamburger-menu-options">
               <li
                 className={
@@ -183,11 +201,29 @@ const NavbarComponent = ({
               </li>
             </ul>
             <div className="social-icons">
-              <i className="fab fa-facebook"></i>
-              <i className="fab fa-twitter"></i>
-              <i className="fab fa-linkedin"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-github"></i>
+              {/* <i className="fab fa-facebook"></i> */}
+              {/* <i className="fab fa-twitter"></i> */}
+              <i
+                className="fab fa-linkedin"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/punith-aj-aa3801190/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              ></i>
+              {/* <i className="fab fa-instagram"></i> */}
+              <i
+                className="fab fa-github"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/Punith1997",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              ></i>
             </div>
             <p className="footer-text">Coded by Punith AJ</p>
           </div>

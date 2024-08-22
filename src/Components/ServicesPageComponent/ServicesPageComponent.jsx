@@ -6,9 +6,12 @@ const ServicesPageComponent = () => {
     <div className="services-page-div">
       <span className="services-page-heading-span">Services I Provide</span>
       <p className="services-page-paragraph">
-        With 9 years of experience as a designer and developer, I have worked
-        with many clients worldwide, built numerous web, mobile, and desktop
-        applications, managed various projects, and run ads on social media.
+        With over 2 years of experience in software engineering and data science,
+        I have developed AI-integrated web applications that significantly boost
+        productivity. I have worked with advanced computer vision and deep
+        learning models, built robust web and mobile applications, and delivered
+        exceptional results in AI-driven defect analysis for electric power
+        systems.
       </p>
       <div className="services-page-cards-div">
         <div className="services-page-single-card-div">

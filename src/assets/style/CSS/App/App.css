@@ -196,10 +196,12 @@ body::-webkit-scrollbar-button {
 
   .home-page-about-info-paragraph-1 {
     font-size: 1.4em;
+    width: 90%;
   }
 
   .services-page-paragraph {
     font-size: 1.4em;
+    width: 90%;
   }
 
   .experience-page-info-div{
@@ -380,6 +382,10 @@ body::-webkit-scrollbar-button {
   .about-page-photo-div > img {
     width: 70%;
     height: 35vh;
+  }
+
+  .about-page-details-div{
+    width: 90%;
   }
 
   .home-page-photo {

@@ -130,7 +130,8 @@
     font-weight: 400;
     font-size: 1.3em;
     color: var(--navbar-resume-color);
-    width: 100%;
+    /* width: 100%; */
+    /* border: 2px solid green; */
 }
 
 .experience-page-cards-div{

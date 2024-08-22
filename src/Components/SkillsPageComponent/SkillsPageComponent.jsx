@@ -110,12 +110,14 @@ const SkillsPageComponent = () => {
           </span>
         </div>
         <p className="experience-page-info-div">
-          Since 2017, I've gained diverse experience in the IT/Tech industry
-          through both freelance and remote positions. With a focus on
-          e-commerce, marketing, and SaaS, I've contributed to a wide range of
-          client projects. Additionally, I founded a design and development
-          agency in 2018. I'm currently seeking a collaborative role within a
-          well-organized team where I can continue to grow my expertise.
+          Since 2021, I've gained diverse experience in the software engineering
+          and data science fields through both in-office and remote positions.
+          With a focus on AI-driven solutions, machine learning, and computer
+          vision, I've contributed to a wide range of projects. Additionally, I
+          have developed robust web and mobile applications integrating advanced
+          AI models. I'm currently seeking a collaborative role within a
+          well-organized team where I can continue to grow my expertise and make
+          impactful contributions.
         </p>
 
         <div className="experience-page-cards-div">
@@ -137,8 +139,8 @@ const SkillsPageComponent = () => {
             </div>
 
             <div className="experience-page-single-card-experience-section-div">
-              <div class="experience-page-single-card-experience-section-details-div">
-                <div class="experience-page-single-card-experience-section-single-detail-div">
+              <div className="experience-page-single-card-experience-section-details-div">
+                <div className="experience-page-single-card-experience-section-single-detail-div">
                   <h3>
                     Web Application Development for Defect Analysis in
                     Electrical Power Lines
@@ -198,7 +200,7 @@ const SkillsPageComponent = () => {
                   </ul>
                 </div>
                 <div className="experience-page-single-card-experience-section-single-detail-seperator-line-div"></div>
-                <div class="experience-page-single-card-experience-section-single-detail-div">
+                <div className="experience-page-single-card-experience-section-single-detail-div">
                   <h3>
                     AI Model Engineering for Thermal and Conductor Wire Analysis
                   </h3>
@@ -266,7 +268,7 @@ const SkillsPageComponent = () => {
                 </div>
                 <div className="experience-page-single-card-experience-section-single-detail-seperator-line-div"></div>
 
-                <div class="experience-page-single-card-experience-section-single-detail-div">
+                <div className="experience-page-single-card-experience-section-single-detail-div">
                   <h3>Feeder Analytics Dashboard Integration</h3>
                   <div className="experience-page-single-card-experience-section-skills-div">
                     <div className="experience-page-single-card-experience-section-single-skill-outer-div">
@@ -323,7 +325,7 @@ const SkillsPageComponent = () => {
                 </div>
                 <div className="experience-page-single-card-experience-section-single-detail-seperator-line-div"></div>
 
-                <div class="experience-page-single-card-experience-section-single-detail-div">
+                <div className="experience-page-single-card-experience-section-single-detail-div">
                   <h3>
                     Mobile Application Development for Electric Meter
                     Replacements
