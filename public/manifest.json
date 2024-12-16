@@ -1,0 +1,21 @@
+{
+  "short_name": "Punith AJ",
+  "name": "Punith AJ Portfolio",
+  "icons": [
+    {
+      "src": "/Punith1997-Portfolio/assets/icons/Cropped_P_192.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/Punith1997-Portfolio/assets/icons/Cropped_P_512.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/Punith1997-Portfolio/",
+  "scope": "/Punith1997-Portfolio/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
