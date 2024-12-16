@@ -1,0 +1,121 @@
+.contact-page-div{
+    min-height: 92vh;
+  /* display: flex;
+  flex-direction: column; */
+  padding-top: 8vh;
+  /* border: 2px solid rgb(37, 29, 110); */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contact-page-content-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid green; */
+    min-height: inherit;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.contact-page-heading-span{
+  font-size: 4em;
+  /* margin-top: 0.1em; */
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  cursor: pointer;
+  word-wrap: unset;
+  font-weight: 600;
+}
+
+.contact-page-info-paragraph{
+    width: 75%;
+}
+
+.contact-page-content-div p{
+    color: #a899c5;
+    font-weight: 400;
+}
+
+.contact-page-content-div p span{
+    background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 102.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  word-wrap: unset;
+  font-weight: 600;
+}
+
+.contact-page-hello-button-span{
+    background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 102.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  word-wrap: unset;
+  font-weight: 600;
+}
+
+.contact-page-hello-button-div{
+    position: relative;
+    width: 150px;
+    height:40px;
+    border-radius: 10px;
+    padding: 3px; /* Adjust padding for border width */
+    background: linear-gradient(90deg, #12ff7d, #5161f3); /* Gradient border */
+    /* display: flex;
+    justify-content: center; 
+    align-items: center;  */
+  }
+
+  .contact-page-hello-button-div::before {
+    content: '';
+    position: absolute;
+    top: 3px; /* Adjust according to padding */
+    left: 3px; /* Adjust according to padding */
+    right: 3px; /* Adjust according to padding */
+    bottom: 3px; /* Adjust according to padding */
+    background: var(--body-color); 
+    border-radius: inherit;
+    z-index: 1;
+  }
+
+  .contact-page-hello-button-div > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; /* Ensure content is above the pseudo-element */
+    /* color: rgb(33, 202, 103); Text color */
+    border-radius: inherit;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    /* bottom: 8%;
+    right: 8%; */
+  }
+
+  .contact-page-social-icons {
+    display: flex;
+    /* justify-content: space-around; */
+    /* margin: 1em 0; */
+    gap: 22px;
+    background: #1b2335;
+    border-radius: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .contact-page-social-icons i {
+    font-size: 1.5em;
+    color: var(--navbar-resume-color);
+    cursor: pointer;
+  }

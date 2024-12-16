@@ -1,0 +1,48 @@
+.about-page-div{
+    min-height: 92vh;
+  padding-top: 8vh;
+  /* border: 2px solid rgb(37, 29, 110); */
+  margin-left: 10%;
+}
+
+.about-page-heading-span{
+    font-size: 4em;
+  /* margin-top: 0.1em; */
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  word-wrap: unset;
+  font-weight: 600;
+}
+
+.about-page-details-div{
+    display: flex;
+}
+
+.about-page-info-div{
+    flex: 2;
+    /* border: 2px solid rgb(24, 185, 59); */
+}
+
+.about-page-info-div > p{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: var(--navbar-resume-color);
+}
+
+.about-page-photo-div{
+    flex: 1;
+    /* border: 2px solid rgb(37, 29, 110); */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page-photo-div > img{
+    width: 70%;
+    border-radius: 5%;
+}
