@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Punith1997-Portfolio/sw.js', { scope: '/Punith1997-Portfolio/' })})}
