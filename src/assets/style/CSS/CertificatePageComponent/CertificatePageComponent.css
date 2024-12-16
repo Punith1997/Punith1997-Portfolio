@@ -1,0 +1,69 @@
+.certificate-page-div{
+    min-height: 92vh;
+  padding-top: 8vh;
+  /* border: 2px solid rgb(37, 29, 110); */
+  margin-left: 10%;
+}
+
+.certificate-page-heading-span{
+    font-size: 4em;
+  /* margin-top: 0.1em; */
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide the original text */
+  cursor: pointer;
+  word-wrap: unset;
+  font-weight: 600;
+}
+
+.certificate-page-certificates-div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border-radius: 20px; */
+    /* border: 2px solid #5161f3; */
+    min-height: inherit;
+    padding-top: 10px;
+}
+
+.certificate-page-certificate-img-outer-div{
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5px; */
+  /* background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%); */
+  /* background: #5161f3; */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.certificate-page-certificate-img-outer-div:hover{
+  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
+  padding: 5px;
+}
+
+.certificate-page-certificate-img{
+  width: 800px;
+  height: 500px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+
+}
+
+.certificate-page-certificate-img-with-detail-div{
+  /* background: var(--body-color); */
+  /* background: #1b2236; */
+  background: #2a3553;
+  border-radius: inherit;
+}
+
+.certificate-page-certificate-img-detail{
+  color: #2ac4a9;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+}
