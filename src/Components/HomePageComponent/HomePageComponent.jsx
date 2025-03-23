@@ -18,7 +18,7 @@ const HomePageComponent = () => {
               Bootstrap, React.js, and React Native. Backend proficiency in
               Django, Django REST Framework, and SQL. Experienced in Machine
               Learning, Deep Learning, and Computer Vision with architectures
-              such as YOLO, Detectron, UNet, and ResNet34. Capable of building
+              such as YOLO, Detectron, UNet, and ResNet. Capable of building
               robust web and mobile applications, integrating advanced AI models
               for enhanced functionality and productivity.
             </p>
