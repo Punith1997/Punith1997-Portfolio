@@ -232,8 +232,6 @@ const App = () => {
   const certificateSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
 
-  const [outsideClickedevent, setOutsideClickedEvent] = useState(null);
-
   useEffect(() => {
     const handleMouseMove = (e) => {
       setHoverPosition({ x: e.x, y: e.y });
@@ -241,15 +239,8 @@ const App = () => {
 
     document.body.addEventListener("mousemove", handleMouseMove);
 
-    const handleClickOutside = (event) => {
-      setOutsideClickedEvent(event);
-    };
-
-    window.addEventListener("click", handleClickOutside);
-
     return () => {
       document.body.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -358,7 +349,6 @@ const App = () => {
         isCertificateInView={isCertificateInView}
         contactSectionRef={contactSectionRef}
         isContactInView={isContactInView}
-        outsideClickedevent={outsideClickedevent}
       />
 
       <HomePageComponent />

@@ -59,44 +59,54 @@
     right: 8%;
   }
 
-  .home-page-about-info-open-resume{
+  .home-page-about-info-open-resume {
     position: relative;
     width: 150px;
-    height:40px;
+    height: 40px;
     border-radius: 10px;
-    padding: 3px; /* Adjust padding for border width */
+    padding: 3px; /* Border width effect */
     background: linear-gradient(90deg, #12ff7d, #5161f3); /* Gradient border */
-    /* display: flex;
-    justify-content: center; 
-    align-items: center;  */
-  }
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
 
   .home-page-about-info-open-resume::before {
     content: '';
     position: absolute;
-    top: 3px; /* Adjust according to padding */
-    left: 3px; /* Adjust according to padding */
-    right: 3px; /* Adjust according to padding */
-    bottom: 3px; /* Adjust according to padding */
-    background: var(--body-color); 
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: var(--body-color); /* Inner background */
     border-radius: inherit;
     z-index: 1;
-  }
+    transition: background 0.3s ease;
+}
+
+.home-page-about-info-open-resume:hover::before {
+    background: #1b2335; /* Slight hover shade for depth */
+}
+
 
   .home-page-about-info-open-resume > * {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 2; /* Ensure content is above the pseudo-element */
-    /* color: rgb(33, 202, 103); Text color */
-    border-radius: inherit;
-    /* border: 2px solid red; */
+    z-index: 2; /* On top of pseudo-element */
     width: 100%;
     height: 100%;
-    /* bottom: 8%;
-    right: 8%; */
-  }
+    border-radius: inherit;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+/* Optional hover lift + subtle glow */
+.home-page-about-info-open-resume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(18, 255, 125, 0.5), 0 8px 20px rgba(81, 97, 243, 0.5);
+}
 
 .home-page-about-info-text-1 {
   font-family: "Poppins", sans-serif;

@@ -29,21 +29,38 @@
 }
 
 .certificate-page-certificate-img-outer-div{
-  /* border: 2px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 5px; */
-  /* background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%); */
-  /* background: #5161f3; */
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  position: relative;
+
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* Glow Background Layer */
+.certificate-page-certificate-img-outer-div::before{
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 22px;
+  background: linear-gradient(90deg, #12ff7d, #5161f3);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover Effect */
 .certificate-page-certificate-img-outer-div:hover{
-  background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 50.56%);
-  padding: 5px;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 15px 35px rgba(81, 97, 243, 0.4),
+    0 5px 15px rgba(18, 255, 125, 0.3);
+}
+
+.certificate-page-certificate-img-outer-div:hover::before{
+  opacity: 1;
 }
 
 .certificate-page-certificate-img{

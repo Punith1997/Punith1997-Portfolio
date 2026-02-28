@@ -207,7 +207,7 @@ const SkillsPageComponent = () => {
                   <div className="experience-page-single-card-experience-section-skills-div">
                     <div className="experience-page-single-card-experience-section-single-skill-outer-div">
                       <div className="experience-page-single-card-experience-section-single-skill-div">
-                        Tesnsorflow
+                        Tensorflow
                       </div>
                     </div>
                     <div className="experience-page-single-card-experience-section-single-skill-outer-div">
