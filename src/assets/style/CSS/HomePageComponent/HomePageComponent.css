@@ -137,7 +137,7 @@
   margin-bottom: 0px !important;
 }
 
-.home-page-about-info-open-resume-span{
+.home-page-about-info-open-resume-span {
   background: linear-gradient(90deg, #12ff7d -1.88%, #5161f3 102.56%);
   -webkit-background-clip: text; /* For Safari */
   background-clip: text;
@@ -145,6 +145,7 @@
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   word-wrap: unset;
+  text-decoration: none; /* <- ADD THIS */
 }
 
 .home-page-about-info-paragraph-1 {
