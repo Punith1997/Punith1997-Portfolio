@@ -6,7 +6,7 @@ const ServicesPageComponent = () => {
     <div className="services-page-div">
       <span className="services-page-heading-span">Services I Provide</span>
       <p className="services-page-paragraph">
-        With over 3 years of experience in software engineering and data science,
+        With over 3.5 years of experience in software engineering and data science,
         I have developed AI-integrated web applications that significantly boost
         productivity. I have worked with advanced computer vision and deep
         learning models, built robust web and mobile applications, and delivered

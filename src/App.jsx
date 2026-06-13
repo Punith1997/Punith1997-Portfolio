@@ -226,6 +226,7 @@ const App = () => {
   const [isCertificateInView, setIsCertificateInView] = useState(false);
   const [isContactInView, setIsContactInView] = useState(false);
   const [isLoading, setIsLoading] = useState(true); // State for loading
+  const homeSectionRef = useRef(null);
   const servicesSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
   const skillsSectionRef = useRef(null);
@@ -339,6 +340,7 @@ const App = () => {
   return (
     <>
       <NavbarComponent
+        homeSectionRef={homeSectionRef}
         servicesSectionRef={servicesSectionRef}
         isServicesInView={isServicesInView}
         aboutSectionRef={aboutSectionRef}
@@ -351,7 +353,10 @@ const App = () => {
         isContactInView={isContactInView}
       />
 
-      <HomePageComponent />
+      <div ref={homeSectionRef}>
+        <HomePageComponent />
+      </div>
+
       <div ref={servicesSectionRef}>
         <ServicesPageComponent />
       </div>

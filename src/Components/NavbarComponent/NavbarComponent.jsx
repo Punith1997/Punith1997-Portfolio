@@ -3,6 +3,7 @@ import "../../assets/style/CSS/NavbarComponent/NavbarComponent.css";
 import resume from "../../assets/files/resume/Punith_AJ_Resume.pdf";
 
 const NavbarComponent = ({
+  homeSectionRef,
   servicesSectionRef,
   isServicesInView,
   aboutSectionRef,
@@ -55,11 +56,27 @@ const NavbarComponent = ({
               className={`navbar-hamburger ${isHamburgerOpen ? "opened" : ""}`}
               onClick={handleHamburgerClick}
               ref={hamburgericonref}
-              style={{ pointerEvents: 'none' }}  // KEY FIX!
+              style={{ pointerEvents: "none" }} // KEY FIX!
             >
-              <g style={{ pointerEvents: 'none' }}>
-                <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                <line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+              <g style={{ pointerEvents: "none" }}>
+                <line
+                  x1="4"
+                  y1="4"
+                  x2="20"
+                  y2="20"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+                <line
+                  x1="20"
+                  y1="4"
+                  x2="4"
+                  y2="20"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
               </g>
             </svg>
           ) : (
@@ -70,17 +87,43 @@ const NavbarComponent = ({
               className="navbar-hamburger"
               onClick={handleHamburgerClick}
               ref={hamburgericonref}
-              style={{ pointerEvents: 'none' }}  // KEY FIX!
+              style={{ pointerEvents: "none" }} // KEY FIX!
             >
-              <g style={{ pointerEvents: 'none' }}>
-                <rect x="0" y="0" width="100%" height="3" fill="currentColor" rx="1.5" />
-                <rect x="0" y="10" width="100%" height="3" fill="currentColor" rx="1.5" />
-                <rect x="0" y="20" width="100%" height="3" fill="currentColor" rx="1.5" />
+              <g style={{ pointerEvents: "none" }}>
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="3"
+                  fill="currentColor"
+                  rx="1.5"
+                />
+                <rect
+                  x="0"
+                  y="10"
+                  width="100%"
+                  height="3"
+                  fill="currentColor"
+                  rx="1.5"
+                />
+                <rect
+                  x="0"
+                  y="20"
+                  width="100%"
+                  height="3"
+                  fill="currentColor"
+                  rx="1.5"
+                />
               </g>
             </svg>
           )}
 
-          <h2 className="navbar-heading">{"{ punith.aj.co }"}</h2>
+          <h2
+            className="navbar-heading"
+            onClick={() => handleScrollTo(homeSectionRef)}
+          >
+            {"{ punith.aj.co }"}
+          </h2>
         </div>
 
         <div className="navbar-div-right">
@@ -192,7 +235,7 @@ const NavbarComponent = ({
                 window.open(
                   "https://www.linkedin.com/in/punith-aj-aa3801190/",
                   "_blank",
-                  "noopener,noreferrer"
+                  "noopener,noreferrer",
                 )
               }
             ></i>
@@ -202,7 +245,7 @@ const NavbarComponent = ({
                 window.open(
                   "https://github.com/Punith1997",
                   "_blank",
-                  "noopener,noreferrer"
+                  "noopener,noreferrer",
                 )
               }
             ></i>
