@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/style/CSS/HomePageComponent/HomePageComponent.css";
 import resume from "../../assets/files/resume/Punith_AJ_Resume.pdf";
+import homePhoto from "../../assets/files/images/home_photo.jpg";
 
 const HomePageComponent = () => {
   return (
@@ -38,10 +39,8 @@ const HomePageComponent = () => {
         <div className="home-page-photo">
           <div className="home-page-photo-div-1">
             <img
-              // src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
-              // src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4="
-              src="https://etimg.etb2bimg.com/photo/99959880.cms"
-              alt="Bird Image"
+              src={homePhoto}
+              alt="Software Engineer and Data Scientist illustration"
             />
           </div>
         </div>

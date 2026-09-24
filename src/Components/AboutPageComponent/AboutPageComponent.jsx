@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/style/CSS/AboutPageComponent/AboutPageComponent.css";
+import aboutPhoto from "../../assets/files/images/about_photo.jpg";
 
 const AboutPageComponent = () => {
   return (
@@ -38,9 +39,8 @@ const AboutPageComponent = () => {
         </div>
         <div className="about-page-photo-div">
           <img
-            // src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
-            src="https://t3.ftcdn.net/jpg/02/14/46/92/360_F_214469252_kZ1U54ZrDTNrrjj0fCciCaYoFbyQNK3y.jpg"
-            alt="Bird Image"
+            src={aboutPhoto}
+            alt="About Punith AJ"
           />
         </div>
       </div>

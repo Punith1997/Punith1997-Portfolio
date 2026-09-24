@@ -14,6 +14,8 @@ const NavbarComponent = ({
   isCertificateInView,
   contactSectionRef,
   isContactInView,
+  theme,
+  onToggleTheme,
 }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
@@ -127,6 +129,20 @@ const NavbarComponent = ({
         </div>
 
         <div className="navbar-div-right">
+          <button
+            className="navbar-theme-changer"
+            onClick={onToggleTheme}
+            title={
+              theme === "dark"
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+            }
+            aria-label="Toggle color theme"
+          >
+            <i
+              className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}
+            ></i>
+          </button>
           <a
             href={resume}
             target="_blank"

@@ -217,6 +217,7 @@ import ContactPageComponent from "./Components/ContactPageComponent/ContactPageC
 import LoaderComponent from "./Components/LoaderComponent/LoaderComponent"; // Import the loader
 
 import "../src/assets/style/CSS/App/App.css";
+import "../src/assets/style/CSS/App/Theme.css";
 
 const App = () => {
   const [hoverPosition, setHoverPosition] = useState({ x: 0, y: 0 });
@@ -226,6 +227,16 @@ const App = () => {
   const [isCertificateInView, setIsCertificateInView] = useState(false);
   const [isContactInView, setIsContactInView] = useState(false);
   const [isLoading, setIsLoading] = useState(true); // State for loading
+  const [theme, setTheme] = useState(() => {
+    try {
+      return localStorage.getItem("portfolio-theme") || "dark";
+    } catch (e) {
+      return "dark";
+    }
+  }); // 'dark' (default, current look) or 'light'
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
   const homeSectionRef = useRef(null);
   const servicesSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -333,6 +344,23 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.style.colorScheme = theme;
+    try {
+      localStorage.setItem("portfolio-theme", theme);
+    } catch (e) {
+      // storage unavailable (e.g. private mode) - theme just won't persist
+    }
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute(
+        "content",
+        theme === "dark" ? "#0f1533" : "#f2f4fb",
+      );
+    }
+  }, [theme]);
+
   if (isLoading) {
     return <LoaderComponent />;
   }
@@ -351,6 +379,8 @@ const App = () => {
         isCertificateInView={isCertificateInView}
         contactSectionRef={contactSectionRef}
         isContactInView={isContactInView}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
 
       <div ref={homeSectionRef}>

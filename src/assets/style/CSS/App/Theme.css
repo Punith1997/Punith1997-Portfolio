@@ -1,0 +1,204 @@
+/* Theme toggle (sun/moon) button in the navbar. Reuses the existing
+   .navbar-theme-changer sizing; this just normalizes it as a <button>. */
+.navbar-theme-changer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 2vh;
+}
+
+/* Smooth transition when switching themes. */
+body,
+.navbar,
+.hamburger-menu,
+.services-page-single-card-div,
+.skills-page-single-card-heading-div,
+.skills-page-single-card-single-skill-div,
+.experience-page-single-card-div,
+.experience-page-single-card-header-div,
+.certificate-page-certificate-img-with-detail-div,
+.contact-page-social-icons,
+.loader-container,
+.home-page-about-info-open-resume::before,
+.contact-page-hello-button-div::before {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ------------------------------------------------------------------
+   LIGHT THEME
+   Dark is the default (no data-theme attribute needed). Everything
+   below only applies when <html data-theme="light"> is set by App.jsx.
+   ------------------------------------------------------------------ */
+
+[data-theme="light"] {
+  --body-color: #eef1f8;
+  --navbar-color: #ffffff;
+  --navbar-hamburger-color: #4b4563;
+  --navbar-hamburger-background-color: #e7ebf6;
+  --navbar-resume-color: #5a6478;
+}
+
+/* Navbar needs separation from the light page background. */
+[data-theme="light"] .navbar {
+  box-shadow: 0 2px 12px rgba(27, 34, 54, 0.1);
+}
+
+[data-theme="light"] .hamburger-menu {
+  box-shadow: 4px 8px 20px rgba(27, 34, 54, 0.12);
+}
+
+[data-theme="light"] .hamburger-menu-single-option-list {
+  color: #5a5470;
+}
+
+[data-theme="light"] .hamburger-menu-single-option-list-inview {
+  color: #1a2140;
+}
+
+[data-theme="light"] .footer-text {
+  color: #5a5470;
+  background-color: #e7ebf6;
+}
+
+/* Gradient headline text: deeper tones so it stays readable on light
+   backgrounds (the neon green was designed for dark). */
+[data-theme="light"] .navbar-heading,
+[data-theme="light"] .home-page-about-info-text-2,
+[data-theme="light"] .home-page-about-info-open-resume-span,
+[data-theme="light"] .services-page-heading-span,
+[data-theme="light"] .services-page-single-card-div-span,
+[data-theme="light"] .about-page-heading-span,
+[data-theme="light"] .skills-page-heading-span,
+[data-theme="light"] .experience-page-heading-span,
+[data-theme="light"] .experience-page-single-card-role-heading-div,
+[data-theme="light"] .certificate-page-heading-span,
+[data-theme="light"] .contact-page-heading-span,
+[data-theme="light"] .contact-page-content-div p span,
+[data-theme="light"] .contact-page-hello-button-span {
+  background: linear-gradient(90deg, #00a35c -1.88%, #3d4fc4 50.56%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Mouse-follow glow: multiply a soft tint instead of difference-blend. */
+[data-theme="light"] .hover-effect {
+  background: radial-gradient(
+    circle,
+    rgba(81, 97, 243, 0.14) 0%,
+    rgba(81, 97, 243, 0) 70%
+  );
+  mix-blend-mode: multiply;
+}
+
+[data-theme="light"] body::-webkit-scrollbar-thumb {
+  background: #b9c3e2;
+}
+
+[data-theme="light"] body::-webkit-scrollbar-thumb:hover {
+  background: #8b99c9;
+}
+
+/* Buttons with gradient borders: light inner hover shade. */
+[data-theme="light"] .home-page-about-info-open-resume:hover::before,
+[data-theme="light"] .contact-page-hello-button-div:hover::before {
+  background: #dfe6f7;
+}
+
+/* Service cards: white surface instead of deep navy. */
+[data-theme="light"] .services-page-single-card-div {
+  background: #ffffff;
+  border: 1px solid #dfe5f5;
+  box-shadow: 0 4px 14px rgba(27, 34, 54, 0.06);
+}
+
+[data-theme="light"] .services-page-single-card-div:hover {
+  box-shadow: 0 10px 25px rgba(40, 57, 105, 0.15);
+}
+
+/* Skills pills: light surface, deeper blue text. */
+[data-theme="light"] .skills-page-single-card-heading-outer-div,
+[data-theme="light"] .skills-page-single-card-single-skill-outer-div {
+  border-color: #c6d2ef;
+}
+
+[data-theme="light"] .skills-page-single-card-heading-div,
+[data-theme="light"] .skills-page-single-card-single-skill-div {
+  background: #e9eefb;
+  color: #2f6db3;
+}
+
+/* Experience cards. */
+[data-theme="light"] .experience-page-single-card-div {
+  background: #ffffff;
+  border: 1px solid #dfe5f5;
+  box-shadow: 0 4px 14px rgba(27, 34, 54, 0.06);
+}
+
+[data-theme="light"] .experience-page-single-card-header-div {
+  background: #f3f5fb;
+}
+
+[data-theme="light"] .experience-page-single-card-year-div,
+[data-theme="light"] .experience-page-single-card-role-details-div,
+[data-theme="light"] .experience-page-single-card-experience-section-details-div ul li {
+  color: #5a6b8c;
+}
+
+[data-theme="light"] .experience-page-single-card-role-down-arrow-svg {
+  color: #5a5470;
+}
+
+[data-theme="light"] .experience-page-single-card-experience-section-details-div h3 {
+  color: #0d8a72;
+}
+
+[data-theme="light"] .experience-page-single-card-experience-section-single-detail-seperator-line-div {
+  background: linear-gradient(261deg, #d4dcf2 5.73%, #bfe3d9 93.52%);
+}
+
+[data-theme="light"] .experience-page-single-card-experience-section-single-skill-outer-div {
+  border-color: #a9cbe8;
+}
+
+[data-theme="light"] .experience-page-single-card-experience-section-single-skill-div {
+  background: #e7eefb;
+  color: #2572ab;
+}
+
+/* Certificate card. */
+[data-theme="light"] .certificate-page-certificate-img-with-detail-div {
+  background: #ffffff;
+  border: 1px solid #dfe5f5;
+  box-shadow: 0 4px 14px rgba(27, 34, 54, 0.06);
+}
+
+[data-theme="light"] .certificate-page-certificate-img-detail {
+  color: #0d8a72;
+}
+
+[data-theme="light"] .certificate-page-certificate-img-outer-div:hover {
+  box-shadow:
+    0 15px 30px rgba(81, 97, 243, 0.18),
+    0 5px 15px rgba(0, 163, 92, 0.12);
+}
+
+/* Contact section. */
+[data-theme="light"] .contact-page-content-div p {
+  color: #5a6b8c;
+}
+
+[data-theme="light"] .contact-page-social-icons {
+  background: #ffffff;
+  border: 1px solid #dfe5f5;
+  box-shadow: 0 4px 14px rgba(27, 34, 54, 0.06);
+}
+
+/* Loader. */
+[data-theme="light"] .loader-container {
+  background-color: #eef1f8;
+}
+
+[data-theme="light"] .animated-text {
+  color: #4a5878;
+}
