@@ -4,7 +4,7 @@ import certificate from "../../assets/files/certificate/Ineuron_Certificate.png"
 
 const CertificatePageComponent = () => {
   const handleCertificateClick = () => {
-    window.open("https://learn.ineuron.ai/certificate/3f5e96a4-af02-4b2f-ad3a-5949ad6fb194", "_blank");
+    window.open("https://drive.google.com/file/d/1ph2UeBS4QUhxchc-_-XlkjyCOWj1Npz7/view?usp=sharing", "_blank");
   };
 
   return (
